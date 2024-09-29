@@ -16,6 +16,6 @@
 
 ![изображение](https://github.com/user-attachments/assets/74462fbd-0ccb-4b23-ba6e-1439c91b5063)
 
-### Результат
+### Результат (гифка)
 
 ![превью](https://github.com/DaniilStolyarov/pks_sem5_p4/blob/9811b9dc6da2c9a469bab9f772d0b536ff54c14f/preview.gif)
