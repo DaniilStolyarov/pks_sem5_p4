@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:shop_catalog/models/shop_item.dart';
+import 'package:shop_catalog/pages/catalog.dart';
 
 class CardPreview extends StatelessWidget {
   const CardPreview({super.key, required this.shopItems, required this.index});
-
   final List<ShopItem> shopItems;
   final int index;
   @override

@@ -26,6 +26,13 @@ class CatalogState extends State<Catalog>
       shopItems.add(item);
     });
   }
+
+  void removeItem(int index)
+  {
+    setState(() {
+      shopItems.removeAt(index);
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,7 +43,15 @@ class CatalogState extends State<Catalog>
           itemCount: shopItems.length,
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
-              child: CardPreview(shopItems: shopItems, index: index),
+              child: Stack(children: [CardPreview(shopItems: shopItems, index: index),
+              Positioned(
+                  right: -10,
+                  top: -10,
+                  child: IconButton(
+                    icon: Icon(Icons.close, color: Colors.red, size: 40,),
+                    onPressed: () => removeItem(index),
+                  )),
+              ]),
               onTap: () {
                 debugPrint('tapped ${shopItems[index].Name}');
                 Navigator.push(
@@ -49,11 +64,11 @@ class CatalogState extends State<Catalog>
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
         tooltip: 'Add Note',
         onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) => AddItem(catalogState: this,)));
         },
+        child: Icon(Icons.add),
       ),
     );
   }
