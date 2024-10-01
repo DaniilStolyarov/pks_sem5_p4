@@ -19,3 +19,5 @@
 ### Результат (гифка)
 
 ![превью](https://github.com/DaniilStolyarov/pks_sem5_p4/blob/9811b9dc6da2c9a469bab9f772d0b536ff54c14f/preview.gif)
+### upd. (01.10.24): добавлена возможность удаления карточки
+![изображение](https://github.com/user-attachments/assets/d3b5d1a4-80dd-42bb-a337-bcdc9c4d88ad)
